@@ -37,7 +37,7 @@ Make sure you have the following installed on your system:
 2. **Start Locust with Docker Compose**:
    Launch Locust master and workers:
    ```bash
-   docker-compose up --scale locust-worker=4
+   docker-compose up --scale worker=4 
    ```
 
 3. **Access the Locust Web Interface**:
@@ -78,12 +78,12 @@ class UserBehavior(HttpUser):
 You can easily scale the number of workers to increase the load:
 
 ```bash
-docker-compose up --scale locust-worker=<number_of_workers>
+docker-compose up --scale worker=<number_of_workers>
 ```
 
 For example, to run 10 workers:
 ```bash
-docker-compose up --scale locust-worker=10
+docker-compose up --scale worker=10
 ```
 
 ---
